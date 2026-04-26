@@ -57,7 +57,7 @@ const styles = `
     font-family: 'Playfair Display', serif;
     font-size: 20px;
     font-weight: 700;
-    color: #2d1f0e;
+    color: white;
     letter-spacing: -0.3px;
   }
   .hn-brand-name span { color: #d97706; }
@@ -75,7 +75,7 @@ const styles = `
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
-    color: #5a3e1b;
+    color: white;
     padding: 6px 14px;
     border-radius: 8px;
     transition: color 0.2s, background 0.2s;
@@ -123,8 +123,8 @@ const styles = `
 
   .hn-btn-ghost {
     background: transparent;
-    border: 1.5px solid rgba(180, 83, 9, 0.3);
-    color: #b45309;
+    border: 1.5px solid white;
+    color: white;
   }
   .hn-btn-ghost:hover { border-color: #d97706; background: rgba(217,119,6,0.06); }
 
@@ -280,7 +280,7 @@ function Navbar() {
   return (
     <>
       <style>{styles}</style>
-      <nav className={`hn-root${scrolled ? ' scrolled' : ''}`}>
+      <nav className={`pt-5  hn-root${scrolled ? ' scrolled' : ''}`}>
         <div className="hn-inner">
           {/* Brand */}
           <Link to="/" className="hn-brand">
